@@ -3,18 +3,26 @@
 <!--[if gt IE 8]><!-->
 <html lang="en">
 <!--<![endif]-->
-{{> ../includes/head title="title" }}
+{{> ../includes/head title=title }}
 <body>
   {{> ../includes/skipnav }}
   {{> ../includes/fsa-browser-upgrade }}
-
+  {{> ../components/whiteout/whiteout }}
+  
   {{#> header-block}}
   <header>
     {{> ../components/tophat/tophat }}
     {{> ../components/header-app/header-app }}
-    {{> ../components/global-nav/global-nav }}
+    {{> ../components/global-nav/global-nav
+      NAV1_ACTIVE=nav1_active
+      NAV2_ACTIVE=nav2_active
+      NAV3_ACTIVE=nav3_active
+      NAV4_ACTIVE=nav4_active
+    }}
   </header>
   {{/header-block}}
+
+  
 
   <main id="main-content" tabindex="-1">
   {{#> main-block}}
