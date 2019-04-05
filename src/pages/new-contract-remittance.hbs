@@ -71,8 +71,25 @@
 				
 				<hr>
 
+				<div class="fsa-grid">
+					<div class="fsa-grid__1/1 fsa-grid__1/2@m">
+						<span class="fsa-text-size--4">Balance Due: <strong>$2,100.00</strong></span>
+					</div>
+					<div class="fsa-grid__1/1 fsa-grid__1/2@m fsa-text-align--right">
+						<button
+							class="fsa-btn fsa-btn--secondary"
+							type="button"
+							data-behavior="open-modal"
+							aria-controls="modal__remittance-collection-history"
+							aria-expanded="false"
+							type="button">
+							View Collections History
+						</button>
+
+					</div>
+				</div>
 				
-				<h2>Remit Payment</h2>
+				<h2 class="fsa-m-t--m">Remit Payment</h2>
 
 				<div class="fsa-grid">
 					<div class="fsa-grid__1/1 fsa-grid__1/2@m">
@@ -91,10 +108,15 @@
 							<!--<span class="fsa-field__help" id="UNIQUE-ID-select-program-year-help">Instructional message here</span>-->
 						</div>
 
-						<div class="fsa-m-b--m fsa-m-t--m">
-							<span class="fsa-m-r--m fsa-text-size--3">Remitter: <strong>ROBERT ROBERTSON</strong></span> 
-							<button type="button" class="fsa-btn fsa-btn--secondary fsa-btn--small" data-behavior="open-modal" data-target="view-producer-1">Select From SCIMS</button>
+						<div class="fsa-m-b--m fsa-m-t--l">
+							<span class="fsa-text-size--3">Remitter: <strong>ROBERT ROBERTSON</strong></span> 
+							
 						</div>
+						<button type="button" class="fsa-btn fsa-btn--secondary" data-behavior="open-modal" data-target="view-producer-1">Select From SCIMS</button>
+
+
+					</div>
+					<div class="fsa-grid__1/1 fsa-grid__1/2@m">	
 
 						<div class="fsa-field">
 							<label class="fsa-field__label" for="UNIQUE-ID-remittance-type">Remittance Type <span class="fsa-field__label-desc">Required</span></label>
@@ -107,10 +129,6 @@
 							</select>
 							<!--<span class="fsa-field__help" id="UNIQUE-ID-select-program-year-help">Instructional message here</span>-->
 						</div>
-
-					</div>
-					<div class="fsa-grid__1/1 fsa-grid__1/2@m">	
-
 
 						<div class="fsa-field">
 							<label class="fsa-field__label" for="UNIQUE-ID-check-number">Check/Item Number <span class="fsa-field__label-desc">Required</span></label>
@@ -128,7 +146,7 @@
 						</div>
 
 
-						<div class="fsa-field fsa-m-t--xl">
+						<div class="fsa-field">
 							<label class="fsa-field__label" for="UNIQUE-ID-check-number"><strong>Amount to Apply to DMC</strong> <span class="fsa-field__label-desc">Required</span></label>
 							<input class="fsa-input fsa-field__item" id="UNIQUE-ID-check-number" placeholder="$0.00" aria-describedby="UNIQUE-ID-check-number-help" aria-required="true" name="UNIQUE-ID-check-number" type="text" value="">
 						</div>
@@ -136,6 +154,7 @@
 					</div>
 				</div>
 
+				<!--
 				<div class="fsa-m-t--m">
 					<button
 						class="fsa-btn fsa-btn--secondary"
@@ -147,6 +166,7 @@
 						View Collections History
 					</button>
 				</div>
+				-->
 
 			</div>
     </div>
@@ -161,14 +181,14 @@
 					<div class="fsa-stepped-control__bd">
 
 						<div class="fsa-stepped-control__message" role="status">
-							<strong>6</strong> of <strong>6</strong> Steps
+							<strong>5</strong> of <strong>5</strong> Steps
 						</div>
 
 						<div class="fsa-stepped-control__list">
 							<div class="fsa-stepped-control__shim"></div>
 					
 							<div class="fsa-stepped-control__item">
-								<a role="button" href="new-contract-producer.html" class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+								<a role="button" href="new-contract-summary.html" class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
 									Back
 								</a>
 							</div>
