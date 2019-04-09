@@ -38,36 +38,7 @@
 
 				<h1>Remittance Information</h1>
 			
-				<div class="fsa-m-t--s">
-					<div class="fsa-grid">
-
-						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
-							<span class="fsa-text-size--3">Crop Year: <strong>2019</strong></span>
-						</div>
-						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
-							<span class="fsa-text-size--3">State: <strong>South Dakota (46)</strong></span>
-						</div>
-						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
-							<span class="fsa-text-size--3">County: <strong>Codington (029)</strong></span>
-						</div>
-
-					</div>
-				</div>
-				<div class="fsa-m-t--s">
-					<div class="fsa-grid">
-
-						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
-							<span class="fsa-text-size--3">Operation: <strong>STICKS RIVER DAIRY</strong></span>
-						</div>
-						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
-							<span class="fsa-text-size--3">Number: <strong>963699666</strong></span>
-						</div>
-						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
-							<span class="fsa-text-size--3">History: <strong>12,123,432</strong></span>
-						</div>
-
-					</div>
-				</div>
+				{{> ../includes/operation-data }}
 				
 				<hr>
 
@@ -212,7 +183,7 @@
 									data-behavior="growl-show whiteout-show"
 									aria-controls="growl__new-contract-success"
 									aria-expanded="false"
-									class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn"
+									class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn"
 									type="button">
 									Save and Submit
 								</button>

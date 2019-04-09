@@ -38,74 +38,16 @@
 
 				<h1>Producer Certification</h1>
 			
-				<div class="fsa-m-t--s">
-					<div class="fsa-grid">
+				{{> ../includes/operation-data }}
 
-						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
-							<span class="fsa-text-size--3">Crop Year: <strong>2019</strong></span>
-						</div>
-						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
-							<span class="fsa-text-size--3">State: <strong>South Dakota (46)</strong></span>
-						</div>
-						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
-							<span class="fsa-text-size--3">County: <strong>Codington (029)</strong></span>
-						</div>
-
-					</div>
-				</div>
-				<div class="fsa-m-t--s">
-					<div class="fsa-grid">
-
-						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
-							<span class="fsa-text-size--3">Operation: <strong>STICKS RIVER DAIRY</strong></span>
-						</div>
-						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
-							<span class="fsa-text-size--3">Number: <strong>963699666</strong></span>
-						</div>
-						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
-							<span class="fsa-text-size--3">History: <strong>12,123,432</strong></span>
-						</div>
-
-					</div>
-				</div>
-
-				<hr>
-				
-				<div class="fsa-m-t--m">
-					<p>
-						<span class="fsa-m-r--l fsa-text-size--4">Is the dairy operation <strong>also the producer</strong> that should receive payment?</span>
-						<span>
-							<input class="fsa-radio" id="r5" type="radio" name="group3" value="yes">
-							<label for="r5">Yes</label>
-						</span>
-						<span>
-							<input class="fsa-radio" id="r6" type="radio" name="group3" value="no">
-							<label for="r6">No</label>
-						</span>
-					</p>
-					<span class="fsa-text-size--3"><strong>Reminder: </strong> Members of entities should not generally be added as producers if the dairy operation is a legal entity. </span>
-					
-				</div>
-
-				<div class="fsa-m-t--m">
-					<span class="fsa-m-r--l fsa-text-size--4">Does the dairy operation qualify for waiver of the administrative fee? </span>
-					<span>
-						<input class="fsa-radio" id="r3" type="radio" name="group2" value="yes">
-						<label for="r3">Yes</label>
-					</span>
-					<span>
-						<input class="fsa-radio" id="r4" type="radio" name="group2" value="no">
-						<label for="r4">No</label>
-					</span>
-				</div>	
-				
+		
 				<table class="fsa-table fsa-table--borderless">
 					<caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
 					<thead>
 						<tr>
 							<th class="fsa-table__th--sticky" scope="col">Producer Name</th>
-							<th class="fsa-table__th--sticky" scope="col">Signature Date</th>
-							<th class="fsa-table__th--sticky" scope="col">Share %</th>
+							<th class="fsa-table__th--sticky fsa-text-align--right" scope="col">Signature Date</th>
+							<th class="fsa-table__th--sticky fsa-text-align--right" scope="col">Share</th>
 							<th class="fsa-table__th--sticky" scope="col">Commensurate</th>
 							<th class="fsa-table__th--sticky" scope="col">Participating</th>
 							<th class="fsa-table__th--sticky" scope="col">Refused Payment</th>
@@ -226,6 +168,19 @@
 					</tbody>
 				</table>
 			
+
+				<div class="fsa-m-t--m">
+					<span class="fsa-m-r--l fsa-text-size--4">Does the dairy operation qualify for waiver of the administrative fee? </span>
+					<span>
+						<input class="fsa-radio" id="r3" type="radio" name="group2" value="yes">
+						<label for="r3">Yes</label>
+					</span>
+					<span>
+						<input class="fsa-radio" id="r4" type="radio" name="group2" value="no">
+						<label for="r4">No</label>
+					</span>
+				</div>	
+
 			</div>
     </div>
 
@@ -244,7 +199,7 @@
 							<div class="fsa-stepped-control__shim"></div>
 					
 							<div class="fsa-stepped-control__item">
-								<a role="button" href="new-contract-coverage-handler.html" class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
+								<a role="button" href="new-contract-coverage-level.html" class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
 									Back
 								</a>
 							</div>
