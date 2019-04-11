@@ -151,44 +151,17 @@
     <div class="fsa-section">
       <div class="fsa-section__bd">        
 				
-				<div class="fsa-stepped-control">
-					<div class="fsa-stepped-control__bd">
-
-						<div class="fsa-stepped-control__message" role="status">
-							<strong>3</strong> of <strong>5</strong> Steps
-						</div>
-
-						<div class="fsa-stepped-control__list">
-							<div class="fsa-stepped-control__shim"></div>
-					
-							<div class="fsa-stepped-control__item">
-								<a role="button" href="new-contract-coverage-level.html" class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
-									Back
-								</a>
-							</div>
-							<div class="fsa-stepped-control__item">
-								<button class="fsa-btn fsa-btn--secondary fsa-btn--large"
-									data-behavior="growl-show whiteout-show"
-									aria-controls="growl__cancel-new-contract"
-									aria-expanded="false"
-									type="button">
-									Cancel
-								</button>
-								<!--
-								<a role="button" href="index.html" class="fsa-btn fsa-btn--alt fsa-btn--large fsa-stepped-control__btn" type="button">
-									Cancel
-								</a>
-								-->
-							</div>
-							<div class="fsa-stepped-control__item">
-								<a id="demoNextButton" role="button" href="new-contract-summary.html" class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="button">
-									<span class="fsa-stepped-control__btn-label">Continue</span>
-								</a>
-							</div>
-
-						</div>
-					</div>
-				</div>
+				{{> ../components/stepped-control/stepped-control
+          CURRENT_STEP="3"
+          TOTAL_STEPS="5"
+          BACK_URL="new-contract-coverage-level.html"
+          BACK_LABEL="Back"
+          CONTINUE_URL="new-contract-summary.html"
+          CONTINUE_LABEL="Continue"
+          USE_GROWL_ON_CANCEL=true  
+          GROWL_ID="growl__cancel-new-contract"      
+        }}
+        
       </div>
     </div>    
 
@@ -196,7 +169,7 @@
 
   {{#*inline "hidden-block"}}
     <!-- HIDDEN - FOR MODALS/GROWL CONTENT -->
-    {{> ../components/growl/growl-cancel-new-contract }}
+    {{> ../components/growl/growl-cancel-new-contract GROWL_ID="growl__cancel-new-contract" }}
 		
     <!-- /HIDDEN -->
   {{/inline}}
