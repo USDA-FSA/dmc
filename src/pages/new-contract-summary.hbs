@@ -1,41 +1,11 @@
-
-
-{{#> ../layouts/base title='DMC - New Contract - Summary' nav2_active="fsa-nav-global__link--active" }}
+{{#> ../layouts/base TITLE='DMC - New Contract - Summary' NAV2_ACTIVE=true }}
 
   {{#*inline "main-block"}}
 
     <div class="fsa-section">
       <div class="fsa-section__bd">
 
-        <nav aria-label="Breadcrumbs">
-					<div class="fsa-stepped-tabs fsa-stepped-tabs--justified">
-						<div class="fsa-stepped-tabs__bd">
-							<ol class="fsa-stepped-tabs__list">
-								<li class="fsa-stepped-tabs__item">
-									<a href="new-contract-general-information.html" class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete">
-										<span class="fsa-stepped-tabs__text">General Information</span>
-									</a>
-								</li>
-								<li class="fsa-stepped-tabs__item">
-									<a href="new-contract-coverage-level.html" class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete">
-										<span class="fsa-stepped-tabs__text">Coverage</span>
-									</a>
-								</li>
-								<li class="fsa-stepped-tabs__item">
-									<a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" aria-current="true">
-										<span class="fsa-stepped-tabs__text">Producer</span>
-									</a>
-								</li>
-								<li class="fsa-stepped-tabs__item">
-									<span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-										<span class="fsa-stepped-tabs__text">Remittance</span>
-									</span>
-								</li>
-								
-							</ol>
-						</div>
-					</div>
-				</nav>
+        {{> ../components/stepped-tabs/stepped-tabs STEP3=true }}
 
 				<h1>Contract Summary</h1>
 			
@@ -165,7 +135,7 @@
 								-->
 							</div>
 							<div class="fsa-stepped-control__item">
-								<a id="demoNextButton" role="button" href="new-contract-remittance.html" class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="button">
+								<a id="demoNextButton" role="button" href="new-contract-remittance2.html" class="fsa-btn fsa-btn--primary fsa-btn--large fsa-stepped-control__btn" type="button">
 									<span class="fsa-stepped-control__btn-label">Continue</span>
 								</a>
 							</div>

@@ -1,40 +1,11 @@
-{{#> ../layouts/base title='DMC - New Contract - General Information' nav2_active="fsa-nav-global__link--active" }}
+{{#> ../layouts/base TITLE='DMC - New Contract - General Information' NAV2_ACTIVE=true }}
 
   {{#*inline "main-block"}}
 
     <div class="fsa-section">
       <div class="fsa-section__bd">
 
-        <nav aria-label="Breadcrumbs">
-					<div class="fsa-stepped-tabs fsa-stepped-tabs--justified">
-						<div class="fsa-stepped-tabs__bd">
-							<ol class="fsa-stepped-tabs__list">
-								
-								<li class="fsa-stepped-tabs__item">
-									<a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" aria-current="true">
-										<span class="fsa-stepped-tabs__text">General Information</span>
-									</a>
-								</li>
-								<li class="fsa-stepped-tabs__item">
-									<span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-										<span class="fsa-stepped-tabs__text">Coverage</span>
-									</span>
-								</li>
-								<li class="fsa-stepped-tabs__item">
-									<span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-										<span class="fsa-stepped-tabs__text">Producer</span>
-									</span>
-								</li>
-								<li class="fsa-stepped-tabs__item">
-									<span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-										<span class="fsa-stepped-tabs__text">Remittance</span>
-									</span>
-								</li>
-								
-							</ol>
-						</div>
-					</div>
-				</nav>
+        {{> ../components/stepped-tabs/stepped-tabs STEP1=true }}
 
 				<h1>General Information</h1>
 			

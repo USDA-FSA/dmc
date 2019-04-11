@@ -6,10 +6,16 @@
           <h1 class="fsa-modal__title">Add Producer</h1>
           
           <div class="fsa-m-t--s">
-            <div class="fsa-field">
-							<label class="fsa-field__label" for="UNIQUE-ID-check-number">Producer Name <span class="fsa-field__label-desc">Required</span></label>
-							<input class="fsa-input fsa-field__item" id="UNIQUE-ID-check-number" aria-describedby="UNIQUE-ID-check-number-help" aria-required="true" name="UNIQUE-ID-check-number" type="text" value="NAME FROM SCIMS">
+            
+            <div class="fsa-m-b--m">
+							{{#if MODAL_URL_1 }}
+              <a href="{{ MODAL_URL_1 }}" role="button" type="button" class="fsa-btn fsa-btn--secondary">Set As Dairy Operation</a> 
+							{{/if}}
+              {{#if MODAL_URL_2 }}
+              <a href="{{ MODAL_URL_2 }}" role="button" type="button" class="fsa-btn fsa-btn--secondary">Select From SCIMS</a>
+              {{/if}}
 						</div>
+
 
 						<div class="fsa-field">
 							<label class="fsa-field__label" for="UNIQUE-ID-check-number">Signature Date <span class="fsa-field__label-desc">Required</span></label>
@@ -92,7 +98,7 @@
             </div>
 
             <div class="fsa-m-t--l">
-              <a href="{{ MODAL_URL }}" role="button" type="button" class="fsa-btn fsa-btn--primary">Add Producer</a>    
+              <button role="button" type="button" class="fsa-btn fsa-btn--primary">Add Producer</button>    
               <button role="button" data-behavior="close-modal" type="button" class="fsa-btn fsa-btn--secondary">Cancel</button>
             </div>
 

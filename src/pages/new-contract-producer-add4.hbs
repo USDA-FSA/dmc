@@ -1,40 +1,11 @@
-{{#> ../layouts/base title='DMC - New Contract - Producer Certification' nav2_active="fsa-nav-global__link--active" }}
+{{#> ../layouts/base TITLE='DMC - New Contract - Producer Certification' NAV2_ACTIVE=true }}
 
   {{#*inline "main-block"}}
 
     <div class="fsa-section">
       <div class="fsa-section__bd">
 
-        <nav aria-label="Breadcrumbs">
-					<div class="fsa-stepped-tabs fsa-stepped-tabs--justified">
-						<div class="fsa-stepped-tabs__bd">
-							<ol class="fsa-stepped-tabs__list">
-								
-								<li class="fsa-stepped-tabs__item">
-									<a href="new-contract-general-information.html" class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete">
-										<span class="fsa-stepped-tabs__text">General Information</span>
-									</a>
-								</li>
-								<li class="fsa-stepped-tabs__item">
-									<a href="new-contract-coverage-level.html" class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete">
-										<span class="fsa-stepped-tabs__text">Coverage</span>
-									</a>
-								</li>
-								<li class="fsa-stepped-tabs__item">
-									<a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" aria-current="true">
-										<span class="fsa-stepped-tabs__text">Producer</span>
-									</a>
-								</li>
-								<li class="fsa-stepped-tabs__item">
-									<span class="fsa-stepped-tabs__label fsa-stepped-tabs__label--incomplete">
-										<span class="fsa-stepped-tabs__text">Remittance</span>
-									</span>
-								</li>
-								
-							</ol>
-						</div>
-					</div>
-				</nav>
+        {{> ../components/stepped-tabs/stepped-tabs STEP3=true }}
 
 				<h1>Producer Certification</h1>
 			
@@ -119,16 +90,7 @@
 
 						<tr>
 							<td colspan="2">
-								<button
-									role="button"
-									type="button"
-									aria-behavior="modal-show"
-									data-behavior="open-modal"
-									aria-controls="modal__producer-add-dairy-operation"
-									aria-expanded="false"
-									class="fsa-btn fsa-btn--secondary fsa-btn--small">
-									Add Dairy Operation
-								</button>
+
 								<button
 									role="button"
 									type="button"
@@ -236,8 +198,7 @@
   {{#*inline "hidden-block"}}
     <!-- HIDDEN - FOR MODALS/GROWL CONTENT -->
     {{> ../components/growl/growl-cancel-new-contract }}
-		{{> ../components/modal/modal-add-dairy-operation MODAL_URL="new-contract-producer-add5.html" }}
-		{{> ../components/modal/modal-add-producer MODAL_URL="new-contract-producer-add4.html" }}
+		{{> ../components/modal/modal-add-producer MODAL_URL_1="new-contract-producer-add5.html" MODAL_URL_2="#" }}
 		{{> ../components/modal/modal-edit-producer }}
     <!-- /HIDDEN -->
   {{/inline}}

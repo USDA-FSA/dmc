@@ -1,40 +1,11 @@
-{{#> ../layouts/base title='DMC - New Contract - Remittance' nav2_active="fsa-nav-global__link--active" }}
+{{#> ../layouts/base TITLE='DMC - New Contract - Remittance' NAV2_ACTIVE=true }}
 
   {{#*inline "main-block"}}
 
     <div class="fsa-section">
       <div class="fsa-section__bd">
 
-        <nav aria-label="Breadcrumbs">
-					<div class="fsa-stepped-tabs fsa-stepped-tabs--justified">
-						<div class="fsa-stepped-tabs__bd">
-							<ol class="fsa-stepped-tabs__list">
-
-								<li class="fsa-stepped-tabs__item">
-									<a href="new-contract-general-information.html" class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete">
-										<span class="fsa-stepped-tabs__text">General Information</span>
-									</a>
-								</li>
-								<li class="fsa-stepped-tabs__item">
-									<a href="new-contract-coverage-level.html" class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete">
-										<span class="fsa-stepped-tabs__text">Coverage</span>
-									</a>
-								</li>
-								<li class="fsa-stepped-tabs__item">
-									<a href="new-contract-producer.html" class="fsa-stepped-tabs__label fsa-stepped-tabs__label--complete">
-										<span class="fsa-stepped-tabs__text">Producer</span>
-									</a>
-								</li>
-								<li class="fsa-stepped-tabs__item">
-									<a class="fsa-stepped-tabs__label fsa-stepped-tabs__label--active" aria-current="true">
-										<span class="fsa-stepped-tabs__text">Remittance</span>
-									</a>
-								</li>
-								
-							</ol>
-						</div>
-					</div>
-				</nav>
+        {{> ../components/stepped-tabs/stepped-tabs STEP4=true }}
 
 				<h1>Remittance Information</h1>
 			
@@ -74,9 +45,9 @@
             </div>
             <div class="fsa-grid__1/1 fsa-grid__1/2@m">	
 
-              <div class="fsa-field">
+              <div class="fsa-field fsa-field--block">
                 <label class="fsa-field__label" for="UNIQUE-ID-select-office">Remittance Office <span class="fsa-field__label-desc">Required</span></label>
-                <select class="fsa-select fsa-field__item " id="UNIQUE-ID-select-office" aria-describedby="UNIQUE-ID-select-office-help" aria-required="true" name="UNIQUE-ID-select-office">
+                <select class="fsa-select fsa-select--block fsa-field__item " id="UNIQUE-ID-select-office" aria-describedby="UNIQUE-ID-select-office-help" aria-required="true" name="UNIQUE-ID-select-office">
                   <option value="">Office</option>
                   <option value="1">CODINGTON COUNTY FARM SERVICE AGENCY, SD</option>
                   <option value="2">MONTGOMERY COUNTY FARM SERVICE AGENCY, SD</option>
