@@ -9,12 +9,14 @@
       </a>
     </div>
     <div class="fsa-header-app__secondary">
+      {{# if USER_NAME }}
       <span class="fsa-header-app__profile">
         <a href="profile.html" class="fsa-header-app__profile-link">
-          <span class="fsa-header-app__profile-name">Sam Mayday Malone</span>
+          <span class="fsa-header-app__profile-name">{{ USER_NAME }}</span>
           <span class="fsa-header-app__profile-expand"></span>
         </a>
       </span>
+      {{/if}}
     </div>
   </div>
 </div>
