@@ -1,0 +1,95 @@
+{{#> ../layouts/base TITLE='DMC - Admin' NAV5_ACTIVE=true }}
+
+  {{#*inline "main-block"}}
+
+    <div class="fsa-section">
+      <div class="fsa-section__bd">
+
+        <h1>Admin - Activate Dairy</h1>
+			
+        <div class="fsa-m-t--l">
+          <h3>Inactive Dairy Operations</h3>
+        </div>
+
+      <div class="fsa-m-t--l">
+				<table class="fsa-table fsa-table--borderless">
+					<caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
+					<thead>
+						<tr>
+							<th scope="col">Select</th>
+							<th scope="col"><button class="fsa-table__sort" type="button">Dairy Operation</button></th>
+							<th scope="col" class="fsa-text-align--right">Farm Number</th>
+							<th scope="col" class="fsa-text-align--right">Tract Number</button></th>
+              <th scope="col" class="fsa-text-align--right">Operator</th>							
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<span>
+									<input class="fsa-radio" id="r1" type="radio" name="group1" value="1">
+									<label for="r1"></label>
+								</span>
+							</td>
+							<td class="fsa-text-align--right">LONNIE L LONESON</td>
+              <td class="fsa-text-align--right">9909</td>
+							<td class="fsa-text-align--right">8808</td>
+              <td class="fsa-text-align--right">JIMMY T SMITHSON III</td>							
+
+						</tr>
+            <tr>
+							<td>
+								<span>
+									<input class="fsa-radio" id="r1" type="radio" name="group1" value="1">
+									<label for="r1"></label>
+								</span>
+							</td>	
+
+							<td class="fsa-text-align--right">RANDALL R RANDSON</td>
+              <td class="fsa-text-align--right">1909</td>
+							<td class="fsa-text-align--right">7818</td>
+              <td class="fsa-text-align--right">LUKE W FORMIER</td>							
+
+						</tr>
+            <tr>
+							<td>
+								<span>
+									<input class="fsa-radio" id="r1" type="radio" name="group1" value="1">
+									<label for="r1"></label>
+								</span>
+							</td>
+
+
+							<td class="fsa-text-align--right">RICHARD R RICHSON</td>
+              <td class="fsa-text-align--right">2988</td>
+							<td class="fsa-text-align--right">5674</td>
+              <td class="fsa-text-align--right">SAMUEL B SMITH</td>							
+
+						</tr>
+					
+					</tbody>
+				</table>
+
+
+        </div>
+
+				<div class="fsa-m-t--m">
+					<a role="button" href="" class="fsa-btn fsa-btn--primary" type="button">
+						<span class="fsa-stepped-control__btn-label">Activate</span>
+					</a>
+				</div>
+
+
+      </div>
+    </div>
+		
+
+  {{/inline}}
+
+  {{#*inline "hidden-block"}}
+    <!-- HIDDEN - FOR MODALS/GROWL CONTENT -->
+    {{> ../includes/hidden }}
+    <!-- /HIDDEN -->
+  {{/inline}}
+
+{{/../layouts/base }}

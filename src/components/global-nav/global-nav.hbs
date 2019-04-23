@@ -4,7 +4,9 @@
       <ul class="fsa-nav-global__list" aria-label="Primary Navigation" id="primary-navigation">
         <!-- Menu Item 1 -->
         <li class="fsa-nav-global__list-item">
-          <a class="fsa-nav-global__link {{#if NAV1_ACTIVE }}fsa-nav-global__link--active{{/if}}" href="index.html" aria-current="page">
+          <a class="fsa-nav-global__link {{#if NAV1_ACTIVE }}fsa-nav-global__link--active{{/if}}"
+            {{#if NAV1_ACTIVE }}href="index.html"{{else}}href="index-operation-selected.html"{{/if}}
+            aria-current="page">
             <span class="fsa-nav-global__text">Home</span>
           </a>
         </li>
@@ -29,7 +31,7 @@
 
         <li class="fsa-nav-global__list-item">
 
-          <button class="fsa-nav-global__link {{#if NAV4_ACTIVE }}fsa-nav-global__link--active{{/if}} fsa-nav-global__link--has-sub-menu" type="button" aria-expanded="false" aria-controls="UNIQUE-ID-593945">
+          <button class="fsa-nav-global__link {{#if NAV5_ACTIVE }}fsa-nav-global__link--active{{/if}} fsa-nav-global__link--has-sub-menu" type="button" aria-expanded="false" aria-controls="UNIQUE-ID-593945">
             <span class="fsa-nav-global__text" id="UNIQUE-ID-123456789">Admin</span>
           </button>
 
@@ -38,10 +40,16 @@
             <div class="fsa-nav-global__sub-menu-bd">
               <ul class="fsa-nav-global__sub-menu-list" aria-labelledby="UNIQUE-ID-123456789">
                 <li class="fsa-nav-global__sub-menu-item">
-                  <a class="fsa-nav-global__sub-menu-link" href="new-contract-summary.html">Summary - Table</a>
+                  <a class="fsa-nav-global__sub-menu-link" href="admin-pending-transfers.html">Pending Transfers</a>
                 </li>
                 <li class="fsa-nav-global__sub-menu-item">
-                  <a class="fsa-nav-global__sub-menu-link" href="new-contract-summary3.html">Summary - C/D</a>
+                  <a class="fsa-nav-global__sub-menu-link" href="admin-activate-dairy.html">Activate Dairy</a>
+                </li>
+                <li class="fsa-nav-global__sub-menu-item">
+                  <a class="fsa-nav-global__sub-menu-link" href="">Activate Contract</a>
+                </li>
+                <li class="fsa-nav-global__sub-menu-item">
+                  <a class="fsa-nav-global__sub-menu-link" href="">Approve Contracts</a>
                 </li>
               </ul>
             </div>

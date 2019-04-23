@@ -1,0 +1,96 @@
+{{#> ../layouts/base TITLE='DMC - Admin' NAV5_ACTIVE=true }}
+
+  {{#*inline "main-block"}}
+
+    <div class="fsa-section">
+      <div class="fsa-section__bd">
+
+        <h1>Admin - Pending Transfers</h1>
+			
+        <div class="fsa-m-t--l">
+          <h3>Review Transfers</h3>
+        </div>
+
+				<div class="fsa-m-t--s">
+          
+         <div class="fsa-m-t--s">
+					<div class="fsa-grid">
+
+						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
+							<span class="fsa-text-size--3">Coverage Year: <strong>2019</strong></span>
+						</div>
+						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
+							<span class="fsa-text-size--3">State: <strong>South Dakota (46)</strong></span>
+						</div>
+						<div class="fsa-grid__1/1 fsa-grid__1/3@m">
+							<span class="fsa-text-size--3">County: <strong>Codington (029)</strong></span>
+						</div>
+
+					</div>
+				</div>
+
+				<table class="fsa-table fsa-table--borderless">
+					<caption class="sr-only">Caption that is hidden visually, but read by screenreader</caption>
+					<thead>
+						<tr>
+							<th scope="col">Select</th>
+							<th scope="col"><button class="fsa-table__sort" type="button">Dairy Operation</button></th>
+							<th scope="col" class="fsa-text-align--right">Production History</button></th>
+              <th scope="col" class="fsa-text-align--right">State</th>
+              <th scope="col" class="fsa-text-align--right">County</th>
+							<th scope="col" class="fsa-text-align--right">Farm Number</th>
+							<th scope="col" class="fsa-text-align--right">Tract Number</button></th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<span>
+									<input class="fsa-radio" id="r1" type="radio" name="group1" value="1">
+									<label for="r1"></label>
+								</span>
+							</td>
+							<td class="fsa-text-align--right">DAVID D DAVISON</td>
+              
+							<td class="fsa-text-align--right">12,123,432</td>
+              <td class="fsa-text-align--right">South Dakota</td>
+							<td class="fsa-text-align--right">Codington</td>
+              <td class="fsa-text-align--right">9909</td>
+							<td class="fsa-text-align--right">8808</td>
+							
+
+						</tr>
+					
+					</tbody>
+				</table>
+
+
+        </div>
+
+				<div class="fsa-m-t--m">
+					<a role="button" href="" class="fsa-btn fsa-btn--secondary" type="button">
+						<span class="fsa-stepped-control__btn-label">Accept</span>
+					</a>
+          <a role="button" href="" class="fsa-btn fsa-btn--secondary" type="button">
+						<span class="fsa-stepped-control__btn-label">Reject</span>
+					</a>
+          <a role="button" href="" class="fsa-btn fsa-btn--secondary" type="button">
+						<span class="fsa-stepped-control__btn-label">View CC-781</span>
+					</a>
+				</div>
+
+
+      </div>
+    </div>
+		
+
+  {{/inline}}
+
+  {{#*inline "hidden-block"}}
+    <!-- HIDDEN - FOR MODALS/GROWL CONTENT -->
+    {{> ../includes/hidden }}
+    <!-- /HIDDEN -->
+  {{/inline}}
+
+{{/../layouts/base }}

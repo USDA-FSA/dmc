@@ -1,0 +1,53 @@
+{{#> ../layouts/base TITLE='DMC - Admin' NAV5_ACTIVE=true }}
+
+  {{#*inline "main-block"}}
+
+    <div class="fsa-section">
+      <div class="fsa-section__bd">
+
+        <h1>Admin</h1>
+			
+				{{> ../includes/operation-data }}
+
+				<div class="fsa-m-t--m">
+          <div class="fsa-field">
+            <label class="fsa-field__label" for="UNIQUE-ID-select-program-year">Program Year <span class="fsa-field__label-desc">Required</span></label>
+            <select class="fsa-select fsa-field__item " id="UNIQUE-ID-select-program-year" aria-describedby="UNIQUE-ID-select-program-year-help" aria-required="true" name="UNIQUE-ID-select-program-year">
+              <option value="">Select program year</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+            </select>
+            <!--<span class="fsa-field__help" id="UNIQUE-ID-select-program-year-help">Instructional message here</span>-->
+          </div>
+          {{> ../components/select/select-state SELECT_ID="UNIQUE-ID-select-state" HELP_ID="UNIQUE-ID-select-state-help" }}
+          {{> ../components/select/select-county SELECT_ID="UNIQUE-ID-select-county" HELP_ID="UNIQUE-ID-select-county-help" STATE_CA=true }}
+
+        </div>
+
+				<div class="fsa-m-t--m">
+					<a role="button" href="" class="fsa-btn fsa-btn--secondary" type="button">
+						<span class="fsa-stepped-control__btn-label">Collect Fees</span>
+					</a>
+          <a role="button" href="" class="fsa-btn fsa-btn--secondary" type="button">
+						<span class="fsa-stepped-control__btn-label">View CCC-CN</span>
+					</a>
+				</div>
+
+
+      </div>
+    </div>
+		
+
+  {{/inline}}
+
+  {{#*inline "hidden-block"}}
+    <!-- HIDDEN - FOR MODALS/GROWL CONTENT -->
+    {{> ../includes/hidden }}
+    <!-- /HIDDEN -->
+  {{/inline}}
+
+{{/../layouts/base }}
